@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Draw Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <div id="rollCounterContainer">
+        <span id="rollCounter">Rolls: 0</span>
+    </div>
+    
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id="container">
+        <div class="box">
+            <h2>Draw Card</h2>
+            <button id="drawCardBtn">Draw Card</button>
+            <button id="autoRollBtn">Start Auto-Roll</button>
+            <button id="stopAutoRollBtn">Stop Auto-Roll</button>
+            <p id="cardDisplay"></p>
+        </div>
+        <div class="box">
+            <h2>Your Collection</h2>
+            <ul id="collectionList"></ul>
+        </div>
+        <div class="box">
+            <h2>Cards Unlocked</h2>
+            <ul id="unlockedList"></ul>
+        </div>
+        <div class="box">
+            <h2>Upgrade Luck</h2>
+            <button id="upgradeLuckBtn">Upgrade Luck</button>
+            <p id="upgradeCost">Upgrade Cost: Common x 1</p>
+        </div>
+        <div class="box">
+            <h2>Card Chances</h2>
+            <ul id="chancesList"></ul>
+        </div>
+        <div class="box">
+            <h2>Filter</h2>
+            <div id="filter">
+                <button id="applyFilterBtn">Apply Filter</button><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Common"> Common</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Uncommon"> Uncommon</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Rare"> Rare</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Epic"> Epic</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Legendary"> Legendary</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Mythical"> Mythical</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Divine"> Divine</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Celestial"> Celestial</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Ethereal"> Ethereal</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Astral"> Astral</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Cosmic"> Cosmic</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Quantum"> Quantum</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Singularity"> Singularity</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Nebula"> Nebula</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Stellar"> Stellar</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Lunar"> Lunar</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Solar"> Solar</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Nova"> Nova</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Abysal"> Abysal</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Radiant"> Radiant</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Chrono"> Chrono</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Omni"> Omni</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Galactic"> Galactic</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Chromatic"> Chromatic</label><br>
+                <label><input type="checkbox" class="filter-checkbox" value="Infinite"> Infinite</label><br>
+            </div>
+        </div>
+    </div>
+    <div id="finalMessage"></div>
+    <div id="achievementPopupContainer"></div>
+    <div id="achievementPopup"></div>
+    <button id="toggleMusicBtn">Turn Music Off</button>
+    <audio id="backgroundMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
